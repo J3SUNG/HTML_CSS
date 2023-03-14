@@ -5,12 +5,34 @@ body {
 #container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 #header {
+  display: flex;
   flex-basis: 100px;
   padding: 12px;
+  align-items: flex-end;
   background-color: dodgerblue;
+  gap: 12px;
+}
+
+#header > * {
+  background-color: yellow;
+  padding: 12px 0;
+  text-align: center;
+}
+
+#header > *:first-child {
+  flex-basis: 100px;
+}
+
+#header > *:last-child {
+  flex-grow: 1;
+}
+
+#main {
+  flex-grow: 1;
 }
 
 #footer {
